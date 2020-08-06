@@ -1,15 +1,20 @@
-def fab(num):
+def fibonacci(n):
     a = 0
-    b = 0
-    if num == 0:
-       print("Invalid number")
-    elif num == 1:
-       return a
+    b = 1
+    if n < 0:
+        print("Incorrect input")
+    elif n == 1:
+        return a
     else:
-       print(a)
-       print(b)
-       c = a + b
-       a = b
-       b = c
-       print(c)
-print(fab(12))    
+        print(a)
+        print(b)
+
+    for i in range(2, n):
+        c = a + b
+        a = b
+        b = c
+        print(c)
+
+
+print(fibonacci(9))
+
