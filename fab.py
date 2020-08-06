@@ -2,7 +2,7 @@ def fab(num):
     a = 0
     b = 0
     if num == 0:
-       print("Invalid number"):
+       print("Invalid number")
     elif num == 1:
        return a
     else:
